@@ -1,0 +1,111 @@
+2018-06-17 18:37:15,848 ERROR: Exception on /index/ [GET] [in E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\routes.py", line 32, in index
+    return render_template("index.html", title='Home Page', form=form, posts=posts)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\index.html", line 1, in top-level template code
+    {% extends "skeleton.html" %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\skeleton.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\index.html", line 24, in block "content"
+    {% include '_post.html' %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\_post.html", line 3, in top-level template code
+    <td><img src="{{ post.author.avatar(36) }}"></td>
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'avatar'
+2018-06-17 18:37:16,013 ERROR: Exception on /index/ [GET] [in E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\routes.py", line 32, in index
+    return render_template("index.html", title='Home Page', form=form, posts=posts)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\index.html", line 1, in top-level template code
+    {% extends "skeleton.html" %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\skeleton.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\index.html", line 24, in block "content"
+    {% include '_post.html' %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\_post.html", line 3, in top-level template code
+    <td><img src="{{ post.author.avatar(36) }}"></td>
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'avatar'
+2018-06-17 18:37:16,149 ERROR: Exception on /index/ [GET] [in E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\routes.py", line 32, in index
+    return render_template("index.html", title='Home Page', form=form, posts=posts)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\Projects\Pycharm\envs\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\index.html", line 1, in top-level template code
+    {% extends "skeleton.html" %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\skeleton.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\index.html", line 24, in block "content"
+    {% include '_post.html' %}
+  File "E:\Users\Bouny\PycharmProjects\untitled\app\templates\_post.html", line 3, in top-level template code
+    <td><img src="{{ post.author.avatar(36) }}"></td>
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'avatar'

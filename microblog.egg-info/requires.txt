@@ -1,0 +1,6 @@
+flask_wtf
+wtforms
+flask
+werkzeug
+alembic
+sqlalchemy
