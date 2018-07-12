@@ -10,7 +10,7 @@ class Config(object):
 
     POSTS_PER_PAGE = 10
 
-    LANGUAGES = ['en', 'fr']
+    LANGUAGES = ['en', 'fr', 'cn']
 
     MAIL_SERVER = os.environ.get('MAIL_SERVER')
     MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25)
